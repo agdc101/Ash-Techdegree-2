@@ -1,0 +1,39 @@
+
+* {
+    box-sizing: border-box;
+}
+/* ----- LAYOUTS ------ */
+
+h1,
+.main-nav {
+    text-align: center
+}
+
+.main-nav {
+    padding-right: 3em;
+}
+
+a {
+    display: block;
+}
+
+/* ---- ELEMENT STYLES ---- */
+h1,
+ul {
+    border: solid #ff0000;
+}
+ul,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+li {
+    margin-bottom: .3em;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+}
+
+body {
+    background-color:rgb(245, 236, 236);
+}
