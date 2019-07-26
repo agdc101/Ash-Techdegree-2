@@ -2,38 +2,60 @@
 * {
     box-sizing: border-box;
 }
-/* ----- LAYOUTS ------ */
-
-h1,
-.main-nav {
-    text-align: center
+body {
+    line-height: 1.3;
 }
 
-.main-nav {
-    padding-right: 3em;
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
 }
 
-a {
-    display: block;
+/* ---- HEADER STYLES ---- */
+
+header {
+    margin-top: 0;
+    background-color: rgb(245, 245, 245);
+}
+h1 {
+    margin: 0;
 }
 
-/* ---- ELEMENT STYLES ---- */
-h1,
+h3,
+h2,
+h1 {
+    text-align: center;
+}
+
 ul {
-    border: solid #ff0000;
+    text-align: center;    
+    list-style: none;
+    padding: 0 6px;
 }
-ul,
 a {
     text-decoration: none;
-    list-style: none;
+    display: block;
+    color: black;
+    transition: 0.4s;
+    padding: 6px;
 }
-li {
-    margin-bottom: .3em;
+.main-nav li {
     border: 1px solid white;
-    border-radius: 20px;
+    border-radius: 16px;
     background-color: white;
+    margin-bottom: 6px;
 }
 
-body {
-    background-color:rgb(245, 236, 236);
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: rgb(112, 140, 219);
+}
+
+/* ---- MAIN STYLES ---- */
+p {
+    text-align: center;
 }
