@@ -35,7 +35,7 @@ ul {
     padding: 0 6px;
 }
 
-a {
+.main-nav a {
     text-decoration: none;
     display: block;
     color: black;
@@ -71,7 +71,20 @@ span {
 footer {
     background-color: #f5f5f5;
 }
-
+.footer-nav {
+    border-top: solid darkgray 1px;
+    margin-top: 24px;
+}
+.name,
+.top {
+    padding: 0 14px 8px;
+}
+.name {
+    float:left;
+}
+.top {
+    float:right;
+}
 
 /* ----- MEDIA QUERIES ----- */
 @media (min-width: 767px) {
