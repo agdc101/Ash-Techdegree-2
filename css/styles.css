@@ -36,10 +36,7 @@ ul {
 }
 
 .main-nav a {
-    text-decoration: none;
     display: block;
-    color: black;
-    transition: 0.4s;
     padding: 6px;
 }
 
@@ -53,6 +50,11 @@ ul {
 img {
     display: block;
     margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
 }
 
 a:hover {
@@ -70,10 +72,12 @@ span {
 
 footer {
     background-color: #f5f5f5;
+    
 }
 .footer-nav {
     border-top: solid darkgray 1px;
     margin-top: 24px;
+   
 }
 .name,
 .top {
@@ -84,6 +88,7 @@ footer {
 }
 .top {
     float:right;
+    
 }
 
 /* ----- MEDIA QUERIES ----- */
@@ -107,16 +112,21 @@ footer {
         text-align: left;
     }
 
-   .pic {
+    .pic {
        width: 90%;
        height: 80%;
    }
-   header {
+    header {
        padding: 12px;
    }
+
+    #mobile-footer {
+       display: none;
+    }
 }
+@media (max-width: 767px) {
 
-
+}
 
 
 .clearfix::after {
