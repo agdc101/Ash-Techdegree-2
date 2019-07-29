@@ -91,6 +91,7 @@ footer {
     
 }
 
+
 /* ----- MEDIA QUERIES ----- */
 @media (min-width: 767px) {
 
@@ -123,9 +124,14 @@ footer {
     #mobile-footer {
        display: none;
     }
+    
+    
 }
-@media (max-width: 767px) {
-
+@media (max-width: 766px) {
+    #comp-footer {
+        display: none;
+    }
+   
 }
 
 
