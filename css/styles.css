@@ -12,7 +12,7 @@ body {
 .wrapper {
     text-align: center;
     margin: 0 auto;
-    width: 90%;
+    width: 90%;   
 }
 
 footer,
@@ -79,11 +79,13 @@ span {
     display: block;
     text-align: center;
 }
+footer {
+    padding-bottom: 12px;
+}
 
 .footer-nav {
     border-top: solid darkgray 1px;
-    margin-top: 24px;
-   
+    margin-top: 24px;  
 }
 .name,
 .top {
@@ -96,14 +98,16 @@ span {
     float:right;  
     padding: 0 12px;  
 }
-#hide-nav {
+.hide-nav {
     visibility: hidden;
     font-size: 0.1em;
 }
 
 /* ----- MEDIA QUERIES ----- */
 @media (min-width: 768px) {
-
+    .student-name {
+        text-shadow: 3px 3px 3px darkgray;
+    }
     .main-nav li {
         display: inline-block;
         padding: 6px 32px;
@@ -117,6 +121,7 @@ span {
         width: 45%;
         vertical-align: top;
         padding: 0 18px;
+        margin-bottom: 26px;
     }
     .intro {
         text-align: left;
@@ -128,17 +133,33 @@ span {
    }
     header {
        padding: 0 12px 12px;
-   }    
+   }
+   footer,
+    header {
+        margin: 0 auto;
+        max-width: 1400px;
+        padding-top: 2px
+    }
+
+    footer {
+        box-shadow: 0 -6px 10px darkgrey;
+    }
+    header {
+       box-shadow: 0 8px 14px darkgray;
+    }    
    
     #back-to-top {
        display: none;
    }
-    #hide-nav {
+    .hide-nav {
        visibility: visible;
        font-size: 1em;
    }
 }
 @media (min-width: 1024px) {
+    .wrapper {
+        max-width: 1100px;
+    }
     .student-name {
         float: left;
         font-size: 1.8em;
@@ -147,15 +168,11 @@ span {
         float: right;
         margin-bottom: 16px;
     }
-    p {
-        font-size: 1.1em;
-    }
+  
     .block {
         width: 30%;
     }
-    header {
-        padding-top: 2px
-    }
+    
     .pic {
         width: 100%;
         height: 100%;
