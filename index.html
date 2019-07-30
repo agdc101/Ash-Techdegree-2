@@ -5,23 +5,29 @@
     <title>Ash's Portfolio</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rufina&display=swap" rel="stylesheet">
   </head>
 
   <body>
     
-      <header class="clearfix">
-          <h1>Ashley Campbell</h1>
+      <header class="clearfix">         
 
-          <nav class="main-nav">
+          <nav class="main-nav clearfix">
+            <h1 class="student-name">Ashley Campbell</h1>
             <ul>
               <li><a href="#top">HOME</a></li>
               <li><a href="#portfolio">PORTFOLIO</a></li>
               <li><a href="#contact">CONTACT</a></li>
             </ul>  
           </nav>
-
-          <img class="profile-pic" src="imgs/responsive-layout-profile.png" alt="profile picture of IT student" title="Profile pic of Ash!"/>
-
+          <picture>
+            <source
+              media="(orientation: landscape)"
+              srcset= "imgs/new-profpic.JPG"/>
+            <source 
+              srcset= "imgs/new-profpic-crop.jpg"/>
+            <img class="profile-pic" src="imgs/new-profpic.JPG" alt="profile picture of IT student" title="Profile pic of Ash!"  width="380" height="300"/>
+          </picture>
           <p class="intro">Hi there! My name is Ashley Campbell and i am a prospective front end developer. 
             i am currently enrolled in a treehouse techdegree and i look forward to graduating and 
             pursueing a career in the tech industry!
@@ -32,38 +38,80 @@
       <main>        
           <h2 id="portfolio">Portfolio</h2>
         <div class="block">  
-          <img class="marketing pic" src="imgs/portfolio-1-small.png" alt="Ashs cartoony portfolio" title="Portfolio cartoon" width="440" height="280">
+          <picture>
+            <source
+              media="(orientation: landscape)"
+              srcset= "imgs/portfolio-1.png"/>
+            <source 
+              srcset= "imgs/portfolio-1-crop.png"/>
+            <img class="marketing pic" src="imgs/portfolio-1-crop.png" alt="Ashs cartoony portfolio" title="Portfolio cartoon" width="440" height="280">
+          </picture>
           <h3>Marketing Page</h3>
           <p>This project i completed shows the home page of one of my favourite companies!</p> 
         </div>
 
         <div class="block">
-          <img class="search pic" src="imgs/portfolio-2-small.png" alt="Ash designed this company page from scratch!" title="The Home page of Ash's fave company!" width="440" height="280">
-          <h3>Search Page</h3>
-          <p>This project i built is designed to search through a database for what the user requests.</p>
+          <picture>
+              <source
+                media="(orientation: landscape)"
+                srcset= "imgs/portfolio-2.png"/>
+              <source 
+                srcset= "imgs/portfolio-2-crop.png"/>
+              <img class="search pic" src="imgs/portfolio-2-crop.png" alt="Ash designed this company page from scratch!" title="The Home page of Ash's fave company!" width="440" height="280">
+          </picture>
+              <h3>Search Page</h3>
+              <p>This project i built is designed to search through a database for what the user requests.</p>
         </div>
 
         <div class="block">
-          <img class="travel pic" src="imgs/portfolio-3-small.png" alt="Ash has also designed a search engine. what a guy!" title="image of a search page designed by ash" width="440" height="280"> 
+          <picture>
+            <source
+              media="(orientation: landscape)"
+              srcset= "imgs/portfolio-3.png"/>
+            <source 
+              srcset= "imgs/portfolio-3-crop.png"/>
+            <img class="travel pic" src="imgs/portfolio-3-crop.png" alt="Ash has also designed a search engine. what a guy!" title="image of a search page designed by ash" width="440" height="280"> 
+          </picture>
           <h3>Travel App</h3>
           <p>Another project of note is a travel app i created which tells the user which mode of transport
             is the most efficient at a given time.</p>
         </div>  
 
         <div class="block">
-          <img class="map pic" src="imgs/portfolio-4-small.png" alt="as traffic continues to get worse, people are now considering all various modes of transport" title="Ash's world-famous travel app" width="440" height="280">
+          <picture>
+            <source
+              media="(orientation: landscape)"
+              srcset= "imgs/portfolio-4.png"/>
+            <source 
+              srcset= "imgs/portfolio-4-crop.png"/>
+            <img class="map pic" src="imgs/portfolio-4-crop.png" alt="as traffic continues to get worse, people are now considering all various modes of transport" title="Ash's world-famous travel app" width="440" height="280">
+          </picture>
           <h3>Map of Favourite Spots</h3>
           <p>This project maps out your favourite city-spots using gps, enabling the user to never forget their city highlights!</p>
         </div>
 
         <div class="block">
-          <img class="photo pic" src="imgs/portfolio-5-small.png" alt="people love showing off their city to visiting friends" title="Ash's spot-app!" width="440" height="280">
+          <picture>
+            <source
+              media="(orientation: landscape)"
+              srcset= "imgs/portfolio-5.png"/>
+            <source 
+              srcset= "imgs/portfolio-5-crop.png"/>
+            <img class="photo pic" src="imgs/portfolio-5-crop.png" alt="people love showing off their city to visiting friends" title="Ash's spot-app!" width="440" height="280">
+          </picture>
           <h3>Photo Gallery</h3>
           <p>This app can show the user pictures of Ash's most recent trips, also allowing for smooth, hassle-free navigations</p>
         </div>  
 
         <div class="block">
-          <img class="pic" src="imgs/portfolio-6-small.png" alt="people are generally too lazy to do there own maths nowadays" title="possibly the best calculator app in the world" width="440" height="280"> 
+          <picture>
+            <source
+              media="(orientation: landscape)"
+              srcset= "imgs/portfolio-6.png"/>
+            <source 
+              srcset= "imgs/portfolio-6-crop.png"/>
+            <img class="pic" src="imgs/portfolio-6-crop.png" alt="people are generally too lazy to do there own maths nowadays" title="possibly the best calculator app in the world" width="440" height="280"> 
+          </picture>
           <h3>Calculator</h3>
           <p>This app features the worlds fastest calculator, designed and innovated by yours truly</p>
         </div>
@@ -76,22 +124,16 @@
         <span><b>Phone:</b><br> +44 123456789</span><br>
         <span><b>Email: </b><a href="mailto:agdc101@gmail.com" target="_top">ashis@hotmail.co.uk</a></span>
     
-          <nav class="footer-nav" id="mobile-footer">
+          <nav class="footer-nav">            
             <ul>
-              <li class="name"><b>Ashley Campbell</b></li>
-              <li class="top"><a href="#top"><b>Back To Top</b></a></li>            
+              <li id="name"><b>Ashley Campbell</b></li>            
+              <li class="top" id="back-to-top"><a href="#top"><b>Back To Top</b></a></li>                             
+              <li id="hide-nav"><a href="#contact"><b>CONTACT</b></a></li>
+              <li id="hide-nav"><a href="#portfolio"><b>PORTFOLIO</b></a></li>
+              <li id="hide-nav"><a href="#top"><b>HOME</b></a></li>                  
             </ul>
           </nav> 
-       <!-- ------ 767px+ Footer ------- -->
-          <nav class="footer-nav" id="comp-footer">
-              <ul>
-                <li class="name"></li><b>Ashley Campbell</b></li>
-                <li><a href="#top"><b>HOME</b></a></li>
-                <li><a href="#portfolio"><b>PORTFOLIO</b></a></li>
-                <li><a href="#contact"><b>CONTACT</b></a></li>                  
-              </ul>
-            </nav> 
-      <!-- --------------------------- -->
+    
     </footer>
 
   </body>
