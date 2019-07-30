@@ -98,6 +98,7 @@ span {
 }
 #hide-nav {
     visibility: hidden;
+    font-size: 0.1em;
 }
 
 /* ----- MEDIA QUERIES ----- */
@@ -128,11 +129,13 @@ span {
     header {
        padding: 0 12px 12px;
    }    
+   
     #back-to-top {
        display: none;
    }
     #hide-nav {
        visibility: visible;
+       font-size: 1em;
    }
 }
 @media (min-width: 1024px) {
