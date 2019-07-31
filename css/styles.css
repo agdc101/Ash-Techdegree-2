@@ -80,6 +80,11 @@ span {
     display: block;
     text-align: center;
 }
+
+.skills-list {
+    display: inline-block;
+    list-style-type: disc;
+}
 footer {
     padding-bottom: 12px;
 }
@@ -144,6 +149,14 @@ footer {
         margin: 0 auto;    
         padding-top: 2px
     }
+    .skills-pic {
+        width: 35%;
+        height: 30%;
+    }
+    .skills-list {
+        margin-bottom: 32px;
+    }
+    
 
     footer {
         box-shadow: 0 -6px 10px darkgrey;
@@ -194,9 +207,12 @@ footer {
     .intro {
         padding: 0 28px;
     }
-    
+    .skills-pic {
+        margin-top: 0;
+        width: 30%;
+        height: 25%;
+    }
 }
-
 /* --------- -- --------- */
 .clearfix::after {
     display: table;
