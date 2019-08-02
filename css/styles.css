@@ -40,7 +40,7 @@ ul {
 
 .main-nav a {
     display: block;
-    padding: 6px;
+    padding: 3px;
 }
 
 .main-nav li {
@@ -53,10 +53,13 @@ ul {
 img {
     display: block;
     margin: 0 auto;
+    max-width: 80%;
+    height: auto;
 }
 .profile-pic {
     border: solid darkgrey 1px;
     border-radius: 1em;
+    max-width: 80%;
 }
 .intro {
     color: rgb(70, 65, 65);
@@ -110,6 +113,11 @@ footer {
 }
 
 /* ----- MEDIA QUERIES ----- */
+@media (min-width: 435px) {
+    .profile-pic {
+        max-width: 60%;
+    }
+}
 @media (min-width: 768px) {
     .wrapper {
         width: 90%;
@@ -117,13 +125,17 @@ footer {
     .student-name {
         text-shadow: 3px 3px 3px darkgray;
     }
+    .main-nav {
+        text-align: center;
+    }
     .main-nav li {
         display: inline-block;
-        padding: 6px 32px;
-        margin: 0 12px;
+        padding: 12px 28px;
+        margin: 0 10px;
     }
     .profile-pic {
         float: right;
+        max-width: 50%;
     }
     .block {
         display: inline-block;
@@ -157,7 +169,6 @@ footer {
         margin-bottom: 32px;
     }
     
-
     footer {
         box-shadow: 0 -6px 10px darkgrey;
     }
@@ -177,16 +188,23 @@ footer {
     .wrapper {
         max-width: 1100px;
     }
+
      header,
      footer {
         max-width: 1280px;
     }
     .student-name {
         float: left;
-        font-size: 1.8em;
+        font-size: 1.8em;  
+           
     }
-    .main-nav li {
-        float: right;
+    .test {
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+    }
+    .main-nav li {       
         margin-bottom: 16px;
     }
   
